@@ -39,7 +39,7 @@ curl https://raw.githubusercontent.com/trustedtomato/debian-post-install/master/
 
 echo 'exec i3' > ~/.xinitrc
 
-echo '[!!!] Run nvidia-detector to install drivers!'
+echo '[!!!] Run nvidia-detect to install drivers!'
 
 read -p "Press [ENTER] to reboot..." -s && echo ""
 systemctl reboot
