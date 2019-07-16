@@ -7,6 +7,6 @@ My post-install script for Debian.
     chmod +x install.sh
     ./install.sh
     
-...or you can replace that long URL with https://tinyurl.com/y35sprgh.
+...or you can replace the curl line with the shorter `curl -L https://tinyurl.com/y35sprgh > install.sh`.
 
 Then just follow the instructions (lines starting with `[!!!]`).
