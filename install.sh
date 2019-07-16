@@ -19,18 +19,18 @@ read -p "Press [ENTER] to continue..." -s && echo ""
 echo 'Updating configs...'
 
 mkdir -p ~/.config/i3blocks
-curl https://gist.githubusercontent.com/trustedtomato/cf0fe3f454769787b06b407e3600c7e9/raw/i3blocks > ~/.config/i3blocks/config
+curl https://raw.githubusercontent.com/trustedtomato/debian-post-install/master/config/i3blocks > ~/.config/i3blocks/config
 
 mkdir -p ~/.config/i3
-curl https://gist.githubusercontent.com/trustedtomato/cf0fe3f454769787b06b407e3600c7e9/raw/i3 > ~/.config/i3/config
+curl https://raw.githubusercontent.com/trustedtomato/debian-post-install/master/config/i3 > ~/.config/i3/config
 
-curl https://gist.githubusercontent.com/trustedtomato/cf0fe3f454769787b06b407e3600c7e9/raw/compton.conf > ~/.config/compton.conf
+curl https://raw.githubusercontent.com/trustedtomato/debian-post-install/master/config/compton.conf > ~/.config/compton.conf
 
 mkdir ~/scripts
-curl https://gist.githubusercontent.com/trustedtomato/cf0fe3f454769787b06b407e3600c7e9/raw/volume.py > ~/scripts/volume.py
+curl https://raw.githubusercontent.com/trustedtomato/debian-post-install/master/config/volume.py > ~/scripts/volume.py
 chmod +x ~/scripts/volume.py
 
-curl https://gist.githubusercontent.com/trustedtomato/cf0fe3f454769787b06b407e3600c7e9/raw/.bash_aliases > ~/.bash_aliases
+curl https://raw.githubusercontent.com/trustedtomato/debian-post-install/master/config/.bash_aliases > ~/.bash_aliases
 
 echo 'exec i3' > ~/.xinitrc
 
